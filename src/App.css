@@ -13,7 +13,19 @@
 
 /*Navbar*/ 
 .navbar {
-  background:black ;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 300px; /* Adjust width as needed */
+  background-color: black; 
+  padding-top: 20px;
+  box-shadow: 2px 0px 5px rgba(0,0,0,0.5);
+  align-items: center;
+  text-align: center;
+
+ /* background:black ;
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -24,7 +36,8 @@
   border-bottom-style: solid;
   position: fixed;
   top:0;
-  height: 10vh;
+  height: 10vh;*/
+  
 }
 .navbar-logo a{
 
@@ -39,7 +52,10 @@
 
 .navbar ul  {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
+    text-align: center;
+    padding-top: 50px;
 }
 
 .navbar ul li  {
@@ -51,8 +67,11 @@
 }
 .navbar img {
 
-  width: 45px;
-  height: 45px;
+  width: 80px;
+  height: 80px;
+}
+.navbar p {
+  color: #f1f1f1;
 }
 
 /*Box gestion */
@@ -62,6 +81,8 @@
   background-color: rgb(245, 241, 241);
   height: 90vh;
   padding-top: 100px;
+  margin-left: 300px; /* This should be equal to the width of the sidebar */
+  padding: 30px;
 }
 
 .box-Gestion h1 {
@@ -154,4 +175,52 @@
 .btn-Delete {
   background-color: red;
   border-radius: 25px;
+}
+
+
+
+/* ADD */
+.box-add{
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+.box-add-client{
+position: absolute;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+top: -50px;
+left: 375px;
+width: 50%;
+height: 300px;
+
+
+}
+
+
+.box-add-client input{
+  padding: 16px;
+  width: 600px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 5px 5px;
+}
+.box-add-client button{
+  background-color:black;
+  color: white;
+  border-radius: 25px;
+  font-size: 25px
+}
+.btn-formadd  {
+  display: flex;
+
+
+}
+.btn-formadd button {
+ margin: 50px;
+margin-top: 10px;
+ 
 }
